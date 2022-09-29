@@ -14,3 +14,76 @@
     display: block;
     clear: both;
 }
+
+/* Layouts */
+
+header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+header> .col{
+    height: 78px;
+    float: left;
+}
+
+header> .col:first-child{
+    width: 169px;
+    background-color: red;
+}
+
+header> .col:nth-child(2){
+    width: calc(100% - 169px - 188px);
+    background-color: green;
+}
+
+header> .col:last-child{
+    width: 188px;
+    background-color:#111;
+    text-align: right;
+    padding-right: 38px;
+    padding-top: 22px;
+}
+
+header> .col:last-child> div{
+    display: inline-block;
+}
+
+#btn-playnow{
+    padding: 8px 16px;
+    border-radius:12px ;
+    height: 32px;
+    font-size: 13px;
+    background: linear-gradient(135deg, rgb(255, 51, 66) 0%, rgb(255, 48, 64) 0.01%, rgb(255, 125, 102) 100%);
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 5ms;
+}
+
+#btn-playnow:hover{
+    background: rgb(255, 70, 85);
+}
+
+
+#ico-world{
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+    text-align: center;
+    border-radius: 6.4px;
+    cursor: pointer;
+}
+
+#ico-world:hover{
+    background-color: rgba(128, 128, 128, 0.2);
+}
+
+
+#ico-world ion-icon{
+    color: white;
+    vertical-align: middle;
+    font-size: 1.2rem;
+    padding-top: 5px;
+}
